@@ -21,7 +21,7 @@ while i < len(per_cent):
     print("Прибыль в банке", bank[i],"за год составит", deposit[i], "руб.")
     i += 1
 
-# определяем порядковый номер максимального значения и соответствующий банк
+# определяем порядковый номер макс. значения, макс. значение и соответствующий банк
 counts = deposit.index(max(deposit))
 best_bank = bank[counts]
 max_deposit = deposit[counts]
