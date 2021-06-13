@@ -17,7 +17,7 @@ deposit = list(per_cent.values())
 # пока i меньше длины словаря, заменяем в списке deposit процентную ставку на годовую прибыль от суммы вклада
 i = 0
 while i < len(per_cent):
-    deposit[i] = int(deposit[i] * int(money) / 100)
+    deposit[i] = int(deposit[i]) * int(money) / 100
     print("Прибыль в банке", bank[i],"за год составит", deposit[i], "руб.")
     i += 1
 
