@@ -8,7 +8,7 @@ money = int(input("Введите сумму вклада в рублях: "))
 banks = list(per_cent.keys())
 deposit = list(per_cent.values())
 
-# пока i меньше длины словаря, заменяем в списке deposit процентной ставки на годовую прибыль от вклада
+# пока i меньше длины словаря, заменяем в списке deposit процентную ставку на годовую прибыль от суммы вклада
 i = 0
 while i < len(per_cent):
     deposit[i] = int(deposit[i]*money/100)
