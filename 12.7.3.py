@@ -14,10 +14,10 @@ while i < len(per_cent):
     deposit[i] = int(deposit[i]*money/100)
     i = i + 1
 
-# определяем максимальное значение, его порядковый номер и соответствующий банк
-max_deposit = max(deposit)
-counts = deposit.index(max_deposit)
+# определяем порядковый номер максимального значения и соответствующий банк
+counts = deposit.index(max(deposit))
 best_bank = banks[counts]
+max_deposit = deposit[counts]
 
 # вывод годовой прибыли по всем банкам, максимальное значение и банк
 print(deposit)
