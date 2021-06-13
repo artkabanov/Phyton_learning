@@ -9,6 +9,7 @@ while True:
     else:
         print("Молодцом! Ты справился!")
         break
+        
 # преобразуем ключи и значения словаря в списки
 bank = list(per_cent.keys())
 deposit = list(per_cent.values())
